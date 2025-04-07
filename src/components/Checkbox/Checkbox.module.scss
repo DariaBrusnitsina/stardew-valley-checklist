@@ -1,0 +1,31 @@
+@import '@app/styles/variables';
+
+.checkbox {
+  display: flex;
+  gap: $gap-tiny;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: $gap-small 0 0 $gap-large;
+
+  img {
+    height: $img-size;
+  }
+
+  input[type='checkbox'] {
+    cursor: pointer;
+    min-height: $img-size;
+    min-width: $img-size;
+  }
+}
+
+.done {
+  @include done-item;
+
+  a {
+    @include done-item;
+  }
+
+  img {
+    opacity: 0.3;
+  }
+}

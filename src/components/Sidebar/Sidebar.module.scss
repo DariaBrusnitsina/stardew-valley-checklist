@@ -1,0 +1,123 @@
+@import '@app/styles/variables';
+
+.container {
+  flex: 0 0 $sidebar-width-desktop;
+  z-index: 200;
+  user-select: none;
+
+  @include mobile {
+    display: none;
+    flex: 0 0 $sidebar-width-mobile;
+    font-size: $small-font-size;
+
+    &.open {
+      background-color: $color-black-coal-light;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: fixed;
+      top: $action-bar-height;
+    }
+  }
+
+  .content {
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    width: $sidebar-width-desktop;
+    z-index: 200;
+
+    h1 {
+      margin: $gap-small;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    h4 {
+      margin: $gap-small $gap-small;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      width: $sidebar-width-mobile;
+      height: calc(100dvh - $action-bar-height);
+    }
+
+    @include desktop {
+      position: fixed;
+      height: 100vh;
+      border-right: $border-width-small solid $color-gray-dark;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .link {
+    color: $color-black-coal;
+    padding: $gap-small $gap-large;
+    display: flex;
+    align-items: center;
+    gap: $gap-tiny;
+    cursor: pointer;
+    text-decoration: none;
+
+    img {
+      width: $img-size;
+    }
+
+    &:hover {
+      background-color: $color-gray-light;
+      text-decoration: none;
+    }
+
+    &.active {
+      background-color: $color-gray-light;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .reset {
+    margin-top: $gap-small;
+    display: flex;
+    width: 100%;
+    color: $color-black-coal;
+    padding: $gap-small $gap-large;
+    align-items: center;
+    gap: $gap-tiny;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.languages {
+  display: flex;
+  margin: $gap-medium;
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: $color-black-coal-light;
+  }
+
+  .selected {
+    font-weight: bold;
+    color: $color-black-coal;
+  }
+}
+
+.diminished {
+  font-size: small;
+  margin: $gap-xlarge $gap-small;
+  color: $color-black-coal-light;
+
+  a {
+    text-decoration: none;
+    color: $color-blue;
+  }
+}

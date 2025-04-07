@@ -1,0 +1,27 @@
+@import '@app/styles/variables';
+
+.navbar {
+  z-index: 400;
+  height: $action-bar-height;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $gap-large;
+  background-color: $color-white;
+  border-bottom: $border-width-small solid $color-gray-dark;
+
+  @include desktop {
+    display: none;
+  }
+
+  button {
+    border: 0;
+    padding: $gap-tiny;
+    height: $img-size;
+    width: $img-size;
+    opacity: 0.7;
+    background: transparent url('../icons/menu.svg') no-repeat center center;
+  }
+}

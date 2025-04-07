@@ -1,0 +1,853 @@
+{
+  "bundles": [
+    {
+      "name": "Standard Bundles",
+      "rooms": [
+        {
+          "name": "Crafts_Room",
+          "description": "The Crafts Room contains the first group of bundles available. Completing all Crafts Room bundles repairs the bridge east of The Mines, unlocking the Quarry.",
+          "amount": 6,
+          "reward": "(Bridge Repair)[Quarry]",
+          "bundles": [
+            {
+              "name": "Spring Foraging Bundle",
+              "icon": "Bundle_Green",
+              "amount": 4,
+              "reward": "springForagingBundle.reward.title",
+              "items": [
+                {
+                  "name": "Wild Horseradish",
+                  "origin": "Spring Foraging"
+                },
+                {
+                  "name": "Daffodil",
+                  "origin": "Spring Foraging, buy from Pierre at Flower Dance"
+                },
+                {
+                  "name": "Leek",
+                  "origin": "Spring Foraging"
+                },
+                {
+                  "name": "Dandelion",
+                  "origin": "Spring Foraging, buy from Pierre at Flower Dance"
+                }
+              ]
+            },
+            {
+              "name": "Summer Foraging Bundle",
+              "icon": "Bundle_Yellow",
+              "amount": 3,
+              "reward": "summerForagingBundle.reward.title",
+              "items": [
+                {
+                  "name": "Grape",
+                  "origin": "Summer Foraging, Fall Farming"
+                },
+                {
+                  "name": "Spice Berry",
+                  "origin": "Summer Foraging, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Sweet Pea",
+                  "origin": "Summer Foraging"
+                }
+              ]
+            },
+            {
+              "name": "Fall Foraging Bundle",
+              "icon": "Bundle_Orange",
+              "amount": 4,
+              "reward": "fallForagingBundle.reward.title",
+              "items": [
+                {
+                  "name": "Common Mushroom",
+                  "origin": "Fall Foraging, Spring & Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree"
+                },
+                {
+                  "name": "Wild Plum",
+                  "origin": "Fall Foraging, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Hazelnut",
+                  "origin": "Fall Foraging"
+                },
+                {
+                  "name": "Blackberry",
+                  "origin": "Fall Foraging, The Farm Cave (fruit bat option)"
+                }
+              ]
+            },
+            {
+              "name": "Winter Foraging Bundle",
+              "icon": "Bundle_Teal",
+              "amount": 4,
+              "reward": "winterForagingBundle.reward.title",
+              "items": [
+                {
+                  "name": "Winter Root",
+                  "origin": "Tilling soil or Artifact Spots in Winter, dropped by Blue Slimes on floors 41-79 of The Mines"
+                },
+                {
+                  "name": "Crystal Fruit",
+                  "origin": "Winter Foraging, dropped by Dust Sprites on floors 41-79 of The Mines"
+                },
+                {
+                  "name": "Snow Yam",
+                  "origin": "Tilling soil or Artifact Spots in Winter"
+                },
+                {
+                  "name": "Crocus",
+                  "origin": "Winter Foraging"
+                }
+              ]
+            },
+            {
+              "name": "Construction Bundle",
+              "icon": "Bundle_Red",
+              "amount": 4,
+              "reward": "Charcoal Kiln",
+              "items": [
+                {
+                  "name": "Wood",
+                  "origin": "Chopping Trees or branches with an Axe, Carpenter's Shop"
+                },
+                {
+                  "name": "Wood_repeated",
+                  "origin": "Chopping Trees or branches with an Axe, Carpenter's Shop"
+                },
+                {
+                  "name": "Stone",
+                  "origin": "Smashing stones with a Pickaxe, Carpenter's Shop"
+                },
+                {
+                  "name": "Hardwood",
+                  "origin": "Chopping Large Stumps or Large Logs with an upgraded Axe, smashing crates in The Mines, chopping Mahogany Trees"
+                }
+              ]
+            },
+            {
+              "name": "Exotic Foraging Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 5,
+              "reward": "Autumn's Bounty",
+              "items": [
+                {
+                  "name": "Coconut",
+                  "origin": "Desert Foraging, Oasis, shaking a Palm Tree in the Desert and on Ginger Island"
+                },
+                {
+                  "name": "Cactus Fruit",
+                  "origin": "Desert Foraging, Oasis"
+                },
+                {
+                  "name": "Cave Carrot",
+                  "origin": "The Mines, either smashing boxes or tilling soil"
+                },
+                {
+                  "name": "Red Mushroom",
+                  "origin": "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree, Forest Farm Map in Fall"
+                },
+                {
+                  "name": "Purple Mushroom",
+                  "origin": "The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall"
+                },
+                {
+                  "name": "Maple Syrup",
+                  "origin": "Tapped Maple Tree"
+                },
+                {
+                  "name": "Oak Resin",
+                  "origin": "Tapped Oak Tree, Haunted Skull"
+                },
+                {
+                  "name": "Pine Tar",
+                  "origin": "Tapped Pine Tree"
+                },
+                {
+                  "name": "Morel",
+                  "origin": "Foraging in the Secret Woods or Forest Farm Map in Spring, The Farm Cave (mushroom option)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pantry",
+          "description": "The Pantry appears after completing one bundle. Completing all Pantry bundles will restore the dilapidated Greenhouse on the farm, making it available to grow Crops, Fruit Trees, and Trees year-round.",
+          "amount": 6,
+          "reward": "Greenhouse",
+          "bundles": [
+            {
+              "name": "Spring Crops Bundle",
+              "icon": "Bundle_Green",
+              "amount": 4,
+              "reward": "Speed-Gro",
+              "items": [
+                {
+                  "name": "Parsnip",
+                  "origin": "Spring Crops"
+                },
+                {
+                  "name": "Green Bean",
+                  "origin": "Spring Crops"
+                },
+                {
+                  "name": "Cauliflower",
+                  "origin": "Spring Crops"
+                },
+                {
+                  "name": "Potato",
+                  "origin": "Spring Crops"
+                }
+              ]
+            },
+            {
+              "name": "Summer Crops Bundle",
+              "icon": "Bundle_Yellow",
+              "amount": 4,
+              "reward": "Quality Sprinkler",
+              "items": [
+                {
+                  "name": "Tomato",
+                  "origin": "Summer Crops"
+                },
+                {
+                  "name": "Hot Pepper",
+                  "origin": "Summer Crops"
+                },
+                {
+                  "name": "Blueberry",
+                  "origin": "Summer Crops"
+                },
+                {
+                  "name": "Melon",
+                  "origin": "Summer Crops"
+                }
+              ]
+            },
+            {
+              "name": "Fall Crops Bundle",
+              "icon": "Bundle_Orange",
+              "amount": 4,
+              "reward": "Bee House",
+              "items": [
+                {
+                  "name": "Corn",
+                  "origin": "Summer / Fall Crops"
+                },
+                {
+                  "name": "Eggplant",
+                  "origin": "Fall Crops"
+                },
+                {
+                  "name": "Pumpkin",
+                  "origin": "Fall Crops"
+                },
+                {
+                  "name": "Yam",
+                  "origin": "Fall Crops, dropped by Duggies on floors 6-29 of The Mines (3%)"
+                }
+              ]
+            },
+            {
+              "name": "Quality Crops Bundle",
+              "icon": "Bundle_Teal",
+              "amount": 3,
+              "reward": "Preserves Jar",
+              "items": [
+                {
+                  "name": "Parsnip_gold",
+                  "origin": "Gold quality Spring Crops"
+                },
+                {
+                  "name": "Melon_gold",
+                  "origin": "Gold quality Summer Crops"
+                },
+                {
+                  "name": "Pumpkin_gold",
+                  "origin": "Gold quality Fall Crops"
+                },
+                {
+                  "name": "Corn_gold",
+                  "origin": "Gold quality Summer / Fall Crops"
+                }
+              ]
+            },
+            {
+              "name": "Animal Bundle",
+              "icon": "Bundle_Red",
+              "amount": 5,
+              "reward": "Cheese Press",
+              "items": [
+                {
+                  "name": "Large Milk",
+                  "origin": "Cows"
+                },
+                {
+                  "name": "Large_Egg_brown",
+                  "origin": "Brown Chickens"
+                },
+                {
+                  "name": "Large Egg",
+                  "origin": "White Chickens"
+                },
+                {
+                  "name": "Large Goat Milk",
+                  "origin": "Goats"
+                },
+                {
+                  "name": "Wool",
+                  "origin": "Sheep, Rabbits"
+                },
+                {
+                  "name": "Duck Egg",
+                  "origin": "Ducks"
+                }
+              ]
+            },
+            {
+              "name": "Artisan Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 6,
+              "reward": "Keg",
+              "items": [
+                {
+                  "name": "Truffle Oil",
+                  "origin": "Made from Truffles using an Oil Maker"
+                },
+                {
+                  "name": "Cloth",
+                  "origin": "Loom, Recycling a Soggy Newspaper, Desert Trader, dropped by Mummies in Skull Cavern"
+                },
+                {
+                  "name": "Goat Cheese",
+                  "origin": "Cheese Press"
+                },
+                {
+                  "name": "Cheese",
+                  "origin": "Cheese Press"
+                },
+                {
+                  "name": "Honey",
+                  "origin": "Bee House, Oasis"
+                },
+                {
+                  "name": "Jelly",
+                  "origin": "Preserves Jar"
+                },
+                {
+                  "name": "Apple",
+                  "origin": "Apple Trees during Fall, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Apricot",
+                  "origin": "Apricot Trees during Spring, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Orange",
+                  "origin": "Orange Trees during Summer, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Peach",
+                  "origin": "Peach Trees during Summer, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Pomegranate",
+                  "origin": "Pomegranate Trees during Fall, The Farm Cave (fruit bat option)"
+                },
+                {
+                  "name": "Cherry",
+                  "origin": "Cherry Trees during Spring, The Farm Cave (fruit bat option)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fish_Tank",
+          "description": "The Fish Tank appears after completing one bundle. Completing all Fish Tank bundles will remove the Glittering Boulder to the left of The Mines entrance. Willy will also give the player a Copper Pan that can be used to collect metal ores and other items from bodies of water.",
+          "amount": 6,
+          "reward": "(Glittering Boulder Removed)[Pans]",
+          "bundles": [
+            {
+              "name": "River Fish Bundle",
+              "icon": "Bundle_Teal",
+              "amount": 4,
+              "reward": "riverFishBundle.reward.title",
+              "items": [
+                {
+                  "name": "Sunfish",
+                  "origin": "Found in Rivers, 6am – 7pm, Spring and Summer during sunny weather"
+                },
+                {
+                  "name": "Catfish",
+                  "origin": "Found in Rivers and Secret Woods, 6am – midnight, Spring and Fall. Only when raining. Can be found in Summer during rain in the Secret Woods and Witch's Swamp, Winter with a Rain Totem"
+                },
+                {
+                  "name": "Shad",
+                  "origin": "Found in Rivers, 9am – 2am, Spring, Summer, and Fall. Only when raining"
+                },
+                {
+                  "name": "Tiger Trout",
+                  "origin": "Found in Rivers, 6am – 7pm, Fall and Winter. Can be found in any weather"
+                }
+              ]
+            },
+            {
+              "name": "Lake Fish Bundle",
+              "icon": "Bundle_Green",
+              "amount": 4,
+              "reward": "Dressed Spinner",
+              "items": [
+                {
+                  "name": "Largemouth Bass",
+                  "origin": "Found in the Mountain Lake, 6am – 7pm, All Seasons"
+                },
+                {
+                  "name": "Carp",
+                  "origin": "Found in the Mountain Lake, Anytime, during Spring, Summer, or Fall. Found in Secret Woods or Sewer, Anytime, All Seasons"
+                },
+                {
+                  "name": "Bullhead",
+                  "origin": "Found in the Mountain Lake, Anytime, All Seasons"
+                },
+                {
+                  "name": "Sturgeon",
+                  "origin": "Found in the Mountain Lake, 6am – 7pm, Summer and Winter"
+                }
+              ]
+            },
+            {
+              "name": "Ocean Fish Bundle",
+              "icon": "Bundle_Blue",
+              "amount": 4,
+              "reward": "oceanFishBundle.reward.title",
+              "items": [
+                {
+                  "name": "Sardine",
+                  "origin": "Found in the Ocean, 6am – 7pm, Spring, Fall, and Winter"
+                },
+                {
+                  "name": "Tuna",
+                  "origin": "Found in the Ocean, 6am – 7pm, Summer and Winter"
+                },
+                {
+                  "name": "Red Snapper",
+                  "origin": "Found in the Ocean, 6am – 7pm, Summer and Fall. Only when raining"
+                },
+                {
+                  "name": "Tilapia",
+                  "origin": "Found in the Ocean, 6am – 2pm, Summer and Fall"
+                }
+              ]
+            },
+            {
+              "name": "Night Fishing Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 3,
+              "reward": "Glow Ring",
+              "items": [
+                {
+                  "name": "Walleye",
+                  "origin": "Found in Rivers, the Mountain Lake, and Cindersap Forest Pond, 12pm – 2am, Fall (Winter with Rain Totem.) Only when raining"
+                },
+                {
+                  "name": "Bream",
+                  "origin": "Found in Rivers, 6pm – 2am, All Seasons"
+                },
+                {
+                  "name": "Eel",
+                  "origin": "Found in the Ocean, 4pm – 2am, Spring or Fall. Only when raining"
+                }
+              ]
+            },
+            {
+              "name": "Crab Pot Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 5,
+              "reward": "crabPotBundle.reward.title",
+              "items": [
+                {
+                  "name": "Lobster",
+                  "origin": "Caught in Crab Pots (ocean)"
+                },
+                {
+                  "name": "Crayfish",
+                  "origin": "Caught in Crab Pots (freshwater)"
+                },
+                {
+                  "name": "Crab",
+                  "origin": "Caught in Crab Pots (ocean), drops from Rock Crabs or Lava Crabs in The Mines"
+                },
+                {
+                  "name": "Cockle",
+                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                },
+                {
+                  "name": "Mussel",
+                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                },
+                {
+                  "name": "Shrimp",
+                  "origin": "Caught in Crab Pots (ocean)"
+                },
+                {
+                  "name": "Snail",
+                  "origin": "Caught in Crab Pots (freshwater)"
+                },
+                {
+                  "name": "Periwinkle",
+                  "origin": "Caught in Crab Pots (freshwater)"
+                },
+                {
+                  "name": "Oyster",
+                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                },
+                {
+                  "name": "Clam",
+                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                }
+              ]
+            },
+            {
+              "name": "Specialty Fish Bundle",
+              "icon": "Bundle_Red",
+              "amount": 4,
+              "reward": "specialtyFishBundle.reward.title",
+              "items": [
+                {
+                  "name": "Pufferfish",
+                  "origin": "Found in the Ocean, 12pm – 4pm, Summer during sunny weather"
+                },
+                {
+                  "name": "Ghostfish",
+                  "origin": "Found in ponds in The Mines floors 20 and 60, Anytime, All Seasons. May also be dropped by Ghosts"
+                },
+                {
+                  "name": "Sandfish",
+                  "origin": "Found in the pond in The Desert, 6am – 8pm, All Seasons"
+                },
+                {
+                  "name": "Woodskip",
+                  "origin": "Found in the Secret Woods and the Forest Farm, Anytime, All Seasons"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boiler_Room",
+          "description": "The Boiler Room appears after completing two bundles. Completing all Boiler Room bundles repairs the Minecarts, allowing the player to fast travel between distant locations. The Locations are Bus Stop, Mines, Quarry and Town.",
+          "amount": 3,
+          "reward": "(Minecarts Repaired)[Minecarts]",
+          "bundles": [
+            {
+              "name": "Blacksmith's Bundle",
+              "icon": "Bundle_Orange",
+              "amount": 3,
+              "reward": "Furnace",
+              "items": [
+                {
+                  "name": "Copper_Bar",
+                  "origin": "Smelting Copper Ore in the Furnacer"
+                },
+                {
+                  "name": "Iron_Bar",
+                  "origin": "Smelting Iron Ore in the Furnace, Crafting the 'Transmute (Fe)' recipe"
+                },
+                {
+                  "name": "Gold_Bar",
+                  "origin": "Smelting Gold Ore in the Furnace, Crafting the 'Transmute (Au)' recipe"
+                }
+              ]
+            },
+            {
+              "name": "Geologist's Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 4,
+              "reward": "Omni_Geode",
+              "items": [
+                {
+                  "name": "Quartz",
+                  "origin": "Foraging on all floors of The Mines"
+                },
+                {
+                  "name": "Earth_Crystal",
+                  "origin": "Foraging on floors 1-39 of The Mines, Geodes, Omni Geodes, drop from Duggies in the Mines (floors 6-29)"
+                },
+                {
+                  "name": "Frozen_Tear",
+                  "origin": "Foraging on floors 41-79 of The Mines, Frozen Geodes, Omni Geodes, drop from Dust Sprites in the Mines (floors 41-79)"
+                },
+                {
+                  "name": "Fire_Quartz",
+                  "origin": "Foraging on floors 81-119 of The Mines, Magma Geodes, Omni Geodes"
+                }
+              ]
+            },
+            {
+              "name": "Adventurer's Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 2,
+              "reward": "Small_Magnet_Ring",
+              "items": [
+                {
+                  "name": "Slime",
+                  "origin": "Dropped by Slimes"
+                },
+                {
+                  "name": "Bat_Wing",
+                  "origin": "Dropped by Bats in The Mines or the Skull Cavern"
+                },
+                {
+                  "name": "Solar_Essence",
+                  "origin": "Dropped by Ghosts, Squid Kids, or Metal Heads in The Mines, dropped by Mummies or Iridium Bats in the Skull Cavern; produced by Sunfish in Fish Ponds; buy from Krobus"
+                },
+                {
+                  "name": "Void_Essence",
+                  "origin": "Dropped by Shadow Brutes or Shadow Shamans in The Mines or Serpents in the Skull Cavern; produced by Void Salmon in Fish Ponds; buy from Krobus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bulletin_Board",
+          "description": "The Bulletin Board appears after completing three bundles. Completing all Bulletin Board bundles improves the player's friendship rating with every non-datable villager by two hearts (500 points). Note that this applies only to non-datable villagers whom the player has met in person. Villagers who do not show on the 'Social' tab of the player menu and villagers whose names appear as '???' will not receive 500 points.",
+          "amount": 5,
+          "reward": "Friendship",
+          "bundles": [
+            {
+              "name": "Chef's Bundle",
+              "icon": "Bundle_Red",
+              "amount": 6,
+              "reward": "Pink_Cake",
+              "items": [
+                {
+                  "name": "Maple_Syrup",
+                  "origin": "Tapped Maple Tree"
+                },
+                {
+                  "name": "Fiddlehead_Fern",
+                  "origin": "Summer Foraging in the Secret Woods, Foraging on Prehistoric Floors at the Skull Cavern, Cutting down Green Rain Trees"
+                },
+                {
+                  "name": "Truffle",
+                  "origin": "Pigs"
+                },
+                {
+                  "name": "Poppy",
+                  "origin": "Summer Crops"
+                },
+                {
+                  "name": "Maki_Roll",
+                  "origin": "Cooking (recipe sources: The Queen of Sauce, The Saloon)"
+                },
+                {
+                  "name": "Fried_Egg",
+                  "origin": "Cooking"
+                }
+              ]
+            },
+            {
+              "name": "Dye Bundle",
+              "icon": "Bundle_Teal",
+              "amount": 6,
+              "reward": "Seed_Maker",
+              "items": [
+                {
+                  "name": "Red_Mushroom",
+                  "origin": "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree, Forest Farm Map in Fall"
+                },
+                {
+                  "name": "Sea_Urchin",
+                  "origin": "Beach Foraging, after using 300 wood to fix the bridge to the right side of The Beach or any side of the beach during crab mating season; foraging in the Beach Farm"
+                },
+                {
+                  "name": "Sunflower",
+                  "origin": "Summer / Fall Crops"
+                },
+                {
+                  "name": "Duck_Feather",
+                  "origin": "Ducks"
+                },
+                {
+                  "name": "Aquamarine",
+                  "origin": "Aquamarine Nodes, boxes in The Mines, Fishing Treasure Chests"
+                },
+                {
+                  "name": "Red_Cabbage",
+                  "origin": "Summer Crops (Red Cabbage Seeds are available at Pierre's General Store in year 2+, at the Traveling Cart, or dropped by Serpents, Mummies, and Purple Slimes)"
+                }
+              ]
+            },
+            {
+              "name": "Field Research Bundle",
+              "icon": "Bundle_Blue",
+              "amount": 4,
+              "reward": "Recycling_Machine",
+              "items": [
+                {
+                  "name": "Purple_Mushroom",
+                  "origin": "The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall"
+                },
+                {
+                  "name": "Nautilus_Shell",
+                  "origin": "Winter Beach Foraging, Beach Farm Map Foraging during any season, Random gift from Demetrius"
+                },
+                {
+                  "name": "Chub",
+                  "origin": "Can be found in the mountain lake and river during all seasons, any time"
+                },
+                {
+                  "name": "Frozen_Geode",
+                  "origin": "The Mines floors 41-79"
+                }
+              ]
+            },
+            {
+              "name": "Fodder Bundle",
+              "icon": "Bundle_Yellow",
+              "amount": 3,
+              "reward": "Heater",
+              "items": [
+                {
+                  "name": "Wheat",
+                  "origin": "Summer / Fall Crops"
+                },
+                {
+                  "name": "Hay",
+                  "origin": "Purchase at Marnie's Ranch or Desert Trader, or harvest from Grass or Wheat"
+                },
+                {
+                  "name": "Apple_repeated",
+                  "origin": "Apple Trees during Fall, The Farm Cave (fruit bat option)"
+                }
+              ]
+            },
+            {
+              "name": "Enchanter's Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 4,
+              "reward": "Gold_Bar_repeated",
+              "items": [
+                {
+                  "name": "Oak_Resin",
+                  "origin": "Tapped Oak Tree"
+                },
+                {
+                  "name": "Wine",
+                  "origin": "Keg"
+                },
+                {
+                  "name": "Rabbit's_Foot",
+                  "origin": "Rabbits, Serpent drop in Skull Cavern (0.8%)"
+                },
+                {
+                  "name": "Pomegranate",
+                  "origin": "Pomegranate Trees during Fall, The Farm Cave (fruit bat option)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vault",
+          "description": "The Vault becomes available after completing four bundles. Pressing the large 'purchase' button will purchase the bundle and deduct the gold from the total.",
+          "amount": 4,
+          "reward": "Bus_Repair",
+          "bundles": [
+            {
+              "name": "2,500 Bundle",
+              "icon": "Bundle_Red",
+              "amount": 1,
+              "reward": "Chocolate_Cake",
+              "items": [
+                {
+                  "name": "Money_2,500g"
+                }
+              ]
+            },
+            {
+              "name": "5,000 Bundle",
+              "icon": "Bundle_Orange",
+              "amount": 1,
+              "reward": "Quality_Fertilizer",
+              "items": [
+                {
+                  "name": "Money_5,000g"
+                }
+              ]
+            },
+            {
+              "name": "10,000 Bundle",
+              "icon": "Bundle_Yellow",
+              "amount": 1,
+              "reward": "Lightning_Rod",
+              "items": [
+                {
+                  "name": "Money_10,000g"
+                }
+              ]
+            },
+            {
+              "name": "25,000 Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 1,
+              "reward": "Crystalarium",
+              "items": [
+                {
+                  "name": "Money_25,000g"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Additional Bundle",
+      "rooms": [
+        {
+          "name": "Abandoned_JojaMart",
+          "description": "After completing the Community Center, the first night before a rainy or stormy day, a cutscene will trigger in which a bolt of lightning strikes the abandoned JojaMart, opening its doors. Inside, the Missing Bundle can be found.",
+          "amount": 1,
+          "reward": "Movie_Theater",
+          "bundles": [
+            {
+              "name": "The_Missing_Bundle",
+              "icon": "Bundle_Purple",
+              "amount": 5,
+              "items": [
+                {
+                  "name": "Silver_Wine",
+                  "origin": "Cask"
+                },
+                {
+                  "name": "Dinosaur_Mayonnaise",
+                  "origin": "Mayonnaise Machine"
+                },
+                {
+                  "name": "Prismatic_Shard",
+                  "origin": "Mining"
+                },
+                {
+                  "name": "Gold_Ancient_Fruit",
+                  "origin": "Crops"
+                },
+                {
+                  "name": "Gold_Void_Salmon",
+                  "origin": "Fishing in the Witch's Swamp"
+                },
+                {
+                  "name": "Caviar",
+                  "origin": "Preserves Jar product from Sturgeon roe"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

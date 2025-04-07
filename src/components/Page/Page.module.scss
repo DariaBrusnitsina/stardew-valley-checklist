@@ -1,0 +1,27 @@
+@import '@app/styles/variables';
+
+.content {
+  background: $color-white;
+  height: 100%;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  padding: $gap-large;
+}
+
+.container {
+  margin-top: $action-bar-height;
+  background: $color-green;
+  flex: 1 1 0;
+  height: 100vh;
+  padding-bottom: $gap-xlarge;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  .header {
+    text-align: center;
+    padding: $gap-large;
+    user-select: none;
+  }
+}
