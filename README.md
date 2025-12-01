@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Stardew Valley Checklist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive application for tracking progress on collecting bundles in the Stardew Valley Community Center.
 
-Currently, two official plugins are available:
+## About the Application
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application helps Stardew Valley players track their progress on collecting all bundles in the Community Center. You can mark collected items, see how many remain until each bundle is completed, and track overall progress across all rooms.
+<img width="1062" height="773" size="50%" alt="Снимок экрана 2025-12-02 в 00 49 07" src="https://github.com/user-attachments/assets/db32b03c-4e86-4adc-8d3c-5306290757ec" />
+<img width="1058" height="774" alt="Снимок экрана 2025-12-02 в 00 52 20" src="https://github.com/user-attachments/assets/a43b7bed-46d1-4886-8bec-15eee4c68fd3" />
+## Key Features
 
-## Expanding the ESLint configuration
+- ✅ Track progress for all Community Center bundles
+- 📊 Visual progress indicators with rings and badges
+- 🏷️ Color-coded tags for each item indicating the source of acquisition
+- 🌍 Multi-language support (English, Russian)
+- 🌙 Dark and light themes with automatic system settings detection
+- 💾 Automatic progress saving in the browser
+- 📱 Responsive design for all devices
+- 🔗 Direct links to Stardew Valley wiki for each item and reward
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
 
-- Configure the top-level `parserOptions` property like this:
+Simply mark collected items by clicking on them. Your progress is automatically saved and will be available on your next visit.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Author
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+[DariaBrusnitsina](https://github.com/DariaBrusnitsina)

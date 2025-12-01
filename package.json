@@ -1,17 +1,41 @@
 {
   "name": "stardew-valley-checklist",
-  "private": true,
-  "version": "1.0.0",
+  "version": "1.2.0",
+  "description": "Interactive checklist application for tracking Stardew Valley Community Center bundles completion",
   "type": "module",
+  "author": {
+    "name": "DariaBrusnitsina",
+    "url": "https://github.com/DariaBrusnitsina"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DariaBrusnitsina/stardew-valley-checklist.git"
+  },
   "homepage": "https://dariabrusnitsina.github.io/stardew-valley-checklist",
+  "bugs": {
+    "url": "https://github.com/DariaBrusnitsina/stardew-valley-checklist/issues"
+  },
+  "keywords": [
+    "stardew-valley",
+    "checklist",
+    "community-center",
+    "bundles",
+    "react",
+    "typescript",
+    "vite",
+    "game-tracker"
+  ],
   "scripts": {
     "dev": "vite --host",
     "build": "tsc -b && vite build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "format": "prettier --write 'src/**/*.{scss,css}'"
+    "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,scss,css,json}'",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "i18next": "^24.2.2",
@@ -19,6 +43,7 @@
     "i18next-http-backend": "^3.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-i18next": "^15.4.0",
     "react-router-dom": "^7.1.2"
   },
@@ -33,8 +58,9 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
-    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.5.3",
     "sass-embedded": "^1.83.4",
     "stylelint-config-prettier": "^9.0.5",

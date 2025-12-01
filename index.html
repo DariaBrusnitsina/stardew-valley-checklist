@@ -1,28 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Stardew Valley Checklist</title>
-    <meta
-      name="description"
-      content="Track your Stardew Valley progress easily with this checklist!"
-    />
-    <meta
-      name="keywords"
-      content="stardew valley, checklist, farming, progress, guide, tasks, collection"
-    />
-    <meta name="author" content="https://github.com/DariaBrusnitsina" />
-    <meta name="robots" content="index, follow" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
-  </head>
+  <!-- Primary Meta Tags -->
+  <title>Stardew Valley Checklist - Track Community Center Bundles Progress</title>
+  <meta name="title" content="Stardew Valley Checklist - Track Community Center Bundles Progress" />
+  <meta name="description"
+    content="Interactive checklist application for tracking Stardew Valley Community Center bundles completion. Mark collected items, track progress, and achieve 100% completion!" />
+  <meta name="keywords"
+    content="stardew valley, checklist, community center, bundles, farming, progress tracker, game guide, stardew valley guide, bundle tracker, completion tracker" />
+  <meta name="author" content="DariaBrusnitsina" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dariabrusnitsina.github.io/stardew-valley-checklist/" />
+  <meta property="og:title" content="Stardew Valley Checklist - Track Community Center Bundles Progress" />
+  <meta property="og:description"
+    content="Interactive checklist application for tracking Stardew Valley Community Center bundles completion. Mark collected items, track progress, and achieve 100% completion!" />
+  <meta property="og:image" content="https://dariabrusnitsina.github.io/stardew-valley-checklist/logo.png" />
+  <meta property="og:site_name" content="Stardew Valley Checklist" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://dariabrusnitsina.github.io/stardew-valley-checklist/" />
+  <meta property="twitter:title" content="Stardew Valley Checklist - Track Community Center Bundles Progress" />
+  <meta property="twitter:description"
+    content="Interactive checklist application for tracking Stardew Valley Community Center bundles completion. Mark collected items, track progress, and achieve 100% completion!" />
+  <meta property="twitter:image" content="https://dariabrusnitsina.github.io/stardew-valley-checklist/logo.png" />
+  <meta property="twitter:creator" content="@DariaBrusnitsina" />
+
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#7ec488" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Stardew Checklist" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/stardew-valley-checklist/logo.png" />
+  <link rel="apple-touch-icon" href="/stardew-valley-checklist/logo.png" />
+  <link rel="canonical" href="https://dariabrusnitsina.github.io/stardew-valley-checklist/" />
+
+  <meta name="google-site-verification" content="94siXjsqSFgSZqRPuLu8EnPe5Lm6eNN2ZeoA0QOB_7s" />
+  <!-- Set theme before React renders to prevent flash -->
+  <script>
+    (function () {
+      const THEME_STORAGE_KEY = 'theme';
+      let theme = 'light';
+
+      // Check saved theme
+      try {
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          theme = savedTheme;
+        } else {
+          // Determine from system settings
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            theme = 'dark';
+          }
+        }
+      } catch (e) {
+        // If localStorage is unavailable, use system settings
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        }
+      }
+
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

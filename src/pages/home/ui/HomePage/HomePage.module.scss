@@ -1,0 +1,210 @@
+@use '@app/styles/variables' as *;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: $gap-xlarge;
+  padding: $gap-xlarge 0;
+
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 $gap-medium 0;
+    color: $color-black-coal;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: $color-gray-text-light;
+    margin: 0;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text-secondary;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
+
+.description {
+  margin-bottom: $gap-xlarge;
+  padding: $gap-large;
+  background: var(--color-gray-light);
+  border-radius: $border-radius;
+  border: 1px solid var(--color-gray-border);
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+
+  [data-theme='dark'] & {
+    background: var(--color-dark-surface);
+    border-color: var(--color-dark-border);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    color: $color-black-coal;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text-secondary;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
+
+.features {
+  margin-bottom: $gap-xlarge;
+
+  .featuresTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 $gap-large 0;
+    text-align: center;
+    color: $color-black-coal;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $gap-large;
+    margin-top: $gap-large;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: $gap-medium;
+    }
+  }
+}
+
+.card {
+  background: $color-white;
+  border: 1px solid $color-gray-border;
+  border-radius: $border-radius;
+  padding: $gap-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.3s ease,
+    border-color 0.3s ease;
+  cursor: default;
+
+  [data-theme='dark'] & {
+    background: $color-dark-surface;
+    border-color: $color-dark-border;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    [data-theme='dark'] & {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .cardIcon {
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+
+  .cardIcon {
+    font-size: 48px;
+    margin-bottom: $gap-medium;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 $gap-small 0;
+    color: $color-black-coal;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  .cardDescription {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    color: $color-gray-text-light;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text-secondary;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+.cta {
+  text-align: center;
+  padding: $gap-xlarge 0;
+  margin-top: $gap-xlarge;
+
+  .ctaText {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: $color-black-coal;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

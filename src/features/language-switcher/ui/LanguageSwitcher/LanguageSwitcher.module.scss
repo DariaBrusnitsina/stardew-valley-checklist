@@ -1,0 +1,65 @@
+@use '@app/styles/variables' as *;
+
+.languages {
+  display: flex;
+  gap: $gap-tiny;
+  background: $color-gray-icon-bg;
+  border-radius: $border-radius;
+  padding: 2px;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  [data-theme='dark'] & {
+    background: $color-dark-icon-bg;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: $color-gray-text-light;
+    padding: $gap-small $gap-medium;
+    border-radius: calc($border-radius - 2px);
+    font-size: $global-font-size;
+    font-weight: 500;
+    transition:
+      background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1;
+
+    @media only screen and (width <= 700px) {
+      font-size: 14px;
+    }
+
+    [data-theme='dark'] & {
+      color: $color-dark-text-secondary;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+      color: $color-black-coal;
+
+      [data-theme='dark'] & {
+        background: rgba(255, 255, 255, 0.1);
+        color: $color-dark-text;
+      }
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .selected {
+    background: $color-white;
+    color: $color-black-coal;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    [data-theme='dark'] & {
+      background: $color-dark-surface-elevated;
+      color: $color-dark-text;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

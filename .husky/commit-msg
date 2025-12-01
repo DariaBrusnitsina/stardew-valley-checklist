@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Проверка формата сообщения коммита
+# Формат: type(scope): description
+# Типы: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
+
+commit_msg=$(cat "$1")
+
+# Минимальная длина описания
+if [ ${#commit_msg} -lt 10 ]; then
+  echo "❌ Commit message is too short. Minimum 10 characters required."
+  exit 1
+fi
+
+# Проверка формата conventional commits (опционально, можно раскомментировать)
+# if ! echo "$commit_msg" | grep -qE "^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\(.+\))?: .{3,}"; then
+#   echo "❌ Commit message must follow format: type(scope): description"
+#   echo ""
+#   echo "Examples:"
+#   echo "  feat(auth): add login functionality"
+#   echo "  fix(ui): resolve button styling issue"
+#   echo "  docs: update README"
+#   echo "  refactor: reorganize project structure"
+#   echo ""
+#   echo "Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert"
+#   exit 1
+# fi
+
+# Проверка на запрещенные слова (предупреждение, не блокирует коммит)
+if echo "$commit_msg" | grep -qiE "(wip|todo|fixme|hack|xxx)"; then
+  echo "⚠️  Warning: Commit message contains words that might indicate incomplete work."
+  echo "   Consider using proper commit message format."
+fi

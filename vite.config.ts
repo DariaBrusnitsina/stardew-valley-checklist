@@ -21,4 +21,25 @@ export default defineConfig({
       '@styles': path.resolve(__dirname, 'src/style'),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Vendor chunks
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'i18n-vendor': [
+            'i18next',
+            'react-i18next',
+            'i18next-browser-languagedetector',
+            'i18next-http-backend',
+          ],
+          // Feature chunks
+          pages: ['./src/pages/home', './src/pages/room'],
+          entities: ['./src/entities/bundle', './src/entities/room'],
+        },
+      },
+    },
+    // Optimize chunk size
+    chunkSizeWarningLimit: 1000,
+  },
 });

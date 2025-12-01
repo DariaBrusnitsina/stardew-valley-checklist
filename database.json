@@ -7,29 +7,29 @@
           "name": "Crafts_Room",
           "description": "The Crafts Room contains the first group of bundles available. Completing all Crafts Room bundles repairs the bridge east of The Mines, unlocking the Quarry.",
           "amount": 6,
-          "reward": "(Bridge Repair)[Quarry]",
+          "reward": "Bridge Repair&Quarry",
           "bundles": [
             {
               "name": "Spring Foraging Bundle",
               "icon": "Bundle_Green",
               "amount": 4,
-              "reward": "springForagingBundle.reward.title",
+              "reward": "Spring Seeds&&30",
               "items": [
                 {
                   "name": "Wild Horseradish",
-                  "origin": "Spring Foraging"
+                  "tags": ["Spring", "Foraging"]
                 },
                 {
                   "name": "Daffodil",
-                  "origin": "Spring Foraging, buy from Pierre at Flower Dance"
+                  "tags": ["Spring", "Foraging", "Flower Dance"]
                 },
                 {
                   "name": "Leek",
-                  "origin": "Spring Foraging"
+                  "tags": ["Spring", "Foraging"]
                 },
                 {
                   "name": "Dandelion",
-                  "origin": "Spring Foraging, buy from Pierre at Flower Dance"
+                  "tags": ["Spring", "Foraging", "Flower Dance"]
                 }
               ]
             },
@@ -37,19 +37,19 @@
               "name": "Summer Foraging Bundle",
               "icon": "Bundle_Yellow",
               "amount": 3,
-              "reward": "summerForagingBundle.reward.title",
+              "reward": "Summer Seeds&&30",
               "items": [
                 {
                   "name": "Grape",
-                  "origin": "Summer Foraging, Fall Farming"
+                  "tags": ["Summer", "Foraging", "Fall Crops"]
                 },
                 {
                   "name": "Spice Berry",
-                  "origin": "Summer Foraging, The Farm Cave (fruit bat option)"
+                  "tags": ["Summer", "Foraging", "Farm Cave"]
                 },
                 {
                   "name": "Sweet Pea",
-                  "origin": "Summer Foraging"
+                  "tags": ["Summer", "Foraging"]
                 }
               ]
             },
@@ -57,23 +57,30 @@
               "name": "Fall Foraging Bundle",
               "icon": "Bundle_Orange",
               "amount": 4,
-              "reward": "fallForagingBundle.reward.title",
+              "reward": "Fall Seeds&&30",
               "items": [
                 {
                   "name": "Common Mushroom",
-                  "origin": "Fall Foraging, Spring & Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree"
+                  "tags": [
+                    "Foraging",
+                    "Spring",
+                    "Fall",
+                    "Secret Woods",
+                    "Farm Cave",
+                    "Mushroom Tree"
+                  ]
                 },
                 {
                   "name": "Wild Plum",
-                  "origin": "Fall Foraging, The Farm Cave (fruit bat option)"
+                  "tags": ["Fall", "Foraging", "Farm Cave"]
                 },
                 {
                   "name": "Hazelnut",
-                  "origin": "Fall Foraging"
+                  "tags": ["Fall", "Foraging"]
                 },
                 {
                   "name": "Blackberry",
-                  "origin": "Fall Foraging, The Farm Cave (fruit bat option)"
+                  "tags": ["Fall", "Foraging", "Farm Cave"]
                 }
               ]
             },
@@ -81,23 +88,23 @@
               "name": "Winter Foraging Bundle",
               "icon": "Bundle_Teal",
               "amount": 4,
-              "reward": "winterForagingBundle.reward.title",
+              "reward": "Winter Seeds&&30",
               "items": [
                 {
                   "name": "Winter Root",
-                  "origin": "Tilling soil or Artifact Spots in Winter, dropped by Blue Slimes on floors 41-79 of The Mines"
+                  "tags": ["Soil", "Artifact Spots", "Winter", "Blue Slimes", "41-79 Mines"]
                 },
                 {
                   "name": "Crystal Fruit",
-                  "origin": "Winter Foraging, dropped by Dust Sprites on floors 41-79 of The Mines"
+                  "tags": ["Winter", "Foraging", "Dust Sprites", "41-79 Mines"]
                 },
                 {
                   "name": "Snow Yam",
-                  "origin": "Tilling soil or Artifact Spots in Winter"
+                  "tags": ["Soil", "Artifact Spots", "Winter"]
                 },
                 {
                   "name": "Crocus",
-                  "origin": "Winter Foraging"
+                  "tags": ["Winter", "Foraging"]
                 }
               ]
             },
@@ -108,20 +115,20 @@
               "reward": "Charcoal Kiln",
               "items": [
                 {
-                  "name": "Wood",
-                  "origin": "Chopping Trees or branches with an Axe, Carpenter's Shop"
+                  "name": "Wood&&99&0",
+                  "tags": ["Trees", "Carpenter's Shop"]
                 },
                 {
-                  "name": "Wood_repeated",
-                  "origin": "Chopping Trees or branches with an Axe, Carpenter's Shop"
+                  "name": "Wood&&99&1",
+                  "tags": ["Trees", "Carpenter's Shop"]
                 },
                 {
                   "name": "Stone",
-                  "origin": "Smashing stones with a Pickaxe, Carpenter's Shop"
+                  "tags": ["Stones", "Carpenter's Shop"]
                 },
                 {
                   "name": "Hardwood",
-                  "origin": "Chopping Large Stumps or Large Logs with an upgraded Axe, smashing crates in The Mines, chopping Mahogany Trees"
+                  "tags": ["Large Stumps", "Boxes", "Mahogany Trees"]
                 }
               ]
             },
@@ -133,39 +140,48 @@
               "items": [
                 {
                   "name": "Coconut",
-                  "origin": "Desert Foraging, Oasis, shaking a Palm Tree in the Desert and on Ginger Island"
+                  "tags": ["Desert", "Foraging", "Oasis", "Palm Tree", "Ginger Island"]
                 },
                 {
                   "name": "Cactus Fruit",
-                  "origin": "Desert Foraging, Oasis"
+                  "tags": ["Desert", "Foraging", "Oasis"]
                 },
                 {
                   "name": "Cave Carrot",
-                  "origin": "The Mines, either smashing boxes or tilling soil"
+                  "tags": ["Mines", "Boxes", "Soil"]
                 },
                 {
                   "name": "Red Mushroom",
-                  "origin": "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree, Forest Farm Map in Fall"
+                  "tags": [
+                    "Foraging",
+                    "Mines",
+                    "Summer",
+                    "Fall",
+                    "Secret Woods",
+                    "Farm Cave",
+                    "Mushroom Tree",
+                    "Forest Farm"
+                  ]
                 },
                 {
                   "name": "Purple Mushroom",
-                  "origin": "The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall"
+                  "tags": ["Foraging", "Mines", "Farm Cave", "Forest Farm", "Fall"]
                 },
                 {
                   "name": "Maple Syrup",
-                  "origin": "Tapped Maple Tree"
+                  "tags": ["Maple Tree"]
                 },
                 {
                   "name": "Oak Resin",
-                  "origin": "Tapped Oak Tree, Haunted Skull"
+                  "tags": ["Oak Tree", "Haunted Skull"]
                 },
                 {
                   "name": "Pine Tar",
-                  "origin": "Tapped Pine Tree"
+                  "tags": ["Pine Tree"]
                 },
                 {
                   "name": "Morel",
-                  "origin": "Foraging in the Secret Woods or Forest Farm Map in Spring, The Farm Cave (mushroom option)"
+                  "tags": ["Spring", "Foraging", "Secret Woods", "Forest Farm", "Farm Cave"]
                 }
               ]
             }
@@ -185,19 +201,19 @@
               "items": [
                 {
                   "name": "Parsnip",
-                  "origin": "Spring Crops"
+                  "tags": ["Spring Crops"]
                 },
                 {
                   "name": "Green Bean",
-                  "origin": "Spring Crops"
+                  "tags": ["Spring Crops"]
                 },
                 {
                   "name": "Cauliflower",
-                  "origin": "Spring Crops"
+                  "tags": ["Spring Crops"]
                 },
                 {
                   "name": "Potato",
-                  "origin": "Spring Crops"
+                  "tags": ["Spring Crops"]
                 }
               ]
             },
@@ -209,19 +225,19 @@
               "items": [
                 {
                   "name": "Tomato",
-                  "origin": "Summer Crops"
+                  "tags": ["Summer Crops"]
                 },
                 {
                   "name": "Hot Pepper",
-                  "origin": "Summer Crops"
+                  "tags": ["Summer Crops"]
                 },
                 {
                   "name": "Blueberry",
-                  "origin": "Summer Crops"
+                  "tags": ["Summer Crops"]
                 },
                 {
                   "name": "Melon",
-                  "origin": "Summer Crops"
+                  "tags": ["Summer Crops"]
                 }
               ]
             },
@@ -233,19 +249,19 @@
               "items": [
                 {
                   "name": "Corn",
-                  "origin": "Summer / Fall Crops"
+                  "tags": ["Summer Crops", "Fall Crops"]
                 },
                 {
                   "name": "Eggplant",
-                  "origin": "Fall Crops"
+                  "tags": ["Fall Crops"]
                 },
                 {
                   "name": "Pumpkin",
-                  "origin": "Fall Crops"
+                  "tags": ["Fall Crops"]
                 },
                 {
                   "name": "Yam",
-                  "origin": "Fall Crops, dropped by Duggies on floors 6-29 of The Mines (3%)"
+                  "tags": ["Fall Crops", "Duggies", "6-29 Mines"]
                 }
               ]
             },
@@ -257,19 +273,19 @@
               "items": [
                 {
                   "name": "Parsnip_gold",
-                  "origin": "Gold quality Spring Crops"
+                  "tags": ["Spring Crops"]
                 },
                 {
                   "name": "Melon_gold",
-                  "origin": "Gold quality Summer Crops"
+                  "tags": ["Summer Crops"]
                 },
                 {
                   "name": "Pumpkin_gold",
-                  "origin": "Gold quality Fall Crops"
+                  "tags": ["Fall Crops"]
                 },
                 {
                   "name": "Corn_gold",
-                  "origin": "Gold quality Summer / Fall Crops"
+                  "tags": ["Summer Crops", "Fall Crops"]
                 }
               ]
             },
@@ -281,27 +297,27 @@
               "items": [
                 {
                   "name": "Large Milk",
-                  "origin": "Cows"
+                  "tags": ["Cows"]
                 },
                 {
-                  "name": "Large_Egg_brown",
-                  "origin": "Brown Chickens"
+                  "name": "Large Brown Egg&Large Egg",
+                  "tags": ["Brown Chickens"]
                 },
                 {
                   "name": "Large Egg",
-                  "origin": "White Chickens"
+                  "tags": ["White Chickens"]
                 },
                 {
                   "name": "Large Goat Milk",
-                  "origin": "Goats"
+                  "tags": ["Goats"]
                 },
                 {
                   "name": "Wool",
-                  "origin": "Sheep, Rabbits"
+                  "tags": ["Sheep", "Rabbits"]
                 },
                 {
                   "name": "Duck Egg",
-                  "origin": "Ducks"
+                  "tags": ["Ducks"]
                 }
               ]
             },
@@ -313,51 +329,51 @@
               "items": [
                 {
                   "name": "Truffle Oil",
-                  "origin": "Made from Truffles using an Oil Maker"
+                  "tags": ["Truffles Oil Maker"]
                 },
                 {
                   "name": "Cloth",
-                  "origin": "Loom, Recycling a Soggy Newspaper, Desert Trader, dropped by Mummies in Skull Cavern"
+                  "tags": ["Loom", "Soggy Newspaper", "Desert Trader", "Mummies Skull Cavern"]
                 },
                 {
                   "name": "Goat Cheese",
-                  "origin": "Cheese Press"
+                  "tags": ["Cheese Press"]
                 },
                 {
                   "name": "Cheese",
-                  "origin": "Cheese Press"
+                  "tags": ["Cheese Press"]
                 },
                 {
                   "name": "Honey",
-                  "origin": "Bee House, Oasis"
+                  "tags": ["Bee House", "Oasis"]
                 },
                 {
                   "name": "Jelly",
-                  "origin": "Preserves Jar"
+                  "tags": ["Preserves Jar"]
                 },
                 {
                   "name": "Apple",
-                  "origin": "Apple Trees during Fall, The Farm Cave (fruit bat option)"
+                  "tags": ["Apple Trees", "Fall", "Farm Cave"]
                 },
                 {
                   "name": "Apricot",
-                  "origin": "Apricot Trees during Spring, The Farm Cave (fruit bat option)"
+                  "tags": ["Apricot Trees", "Spring", "Farm Cave"]
                 },
                 {
                   "name": "Orange",
-                  "origin": "Orange Trees during Summer, The Farm Cave (fruit bat option)"
+                  "tags": ["Orange Trees", "Summer", "Farm Cave"]
                 },
                 {
                   "name": "Peach",
-                  "origin": "Peach Trees during Summer, The Farm Cave (fruit bat option)"
+                  "tags": ["Peach Trees", "Summer", "Farm Cave"]
                 },
                 {
                   "name": "Pomegranate",
-                  "origin": "Pomegranate Trees during Fall, The Farm Cave (fruit bat option)"
+                  "tags": ["Pomegranate Trees", "Fall", "Farm Cave"]
                 },
                 {
                   "name": "Cherry",
-                  "origin": "Cherry Trees during Spring, The Farm Cave (fruit bat option)"
+                  "tags": ["Cherry Trees", "Spring", "Farm Cave"]
                 }
               ]
             }
@@ -367,29 +383,38 @@
           "name": "Fish_Tank",
           "description": "The Fish Tank appears after completing one bundle. Completing all Fish Tank bundles will remove the Glittering Boulder to the left of The Mines entrance. Willy will also give the player a Copper Pan that can be used to collect metal ores and other items from bodies of water.",
           "amount": 6,
-          "reward": "(Glittering Boulder Removed)[Pans]",
+          "reward": "Glittering Boulder Removed&Pans",
           "bundles": [
             {
               "name": "River Fish Bundle",
               "icon": "Bundle_Teal",
               "amount": 4,
-              "reward": "riverFishBundle.reward.title",
+              "reward": "Deluxe Bait&&30",
               "items": [
                 {
                   "name": "Sunfish",
-                  "origin": "Found in Rivers, 6am – 7pm, Spring and Summer during sunny weather"
+                  "tags": ["Rivers", "6am – 7pm", "Spring", "Summer"]
                 },
                 {
                   "name": "Catfish",
-                  "origin": "Found in Rivers and Secret Woods, 6am – midnight, Spring and Fall. Only when raining. Can be found in Summer during rain in the Secret Woods and Witch's Swamp, Winter with a Rain Totem"
+                  "tags": [
+                    "Rivers",
+                    "Secret Woods",
+                    "6am – midnight",
+                    "Spring",
+                    "Fall",
+                    "Raining",
+                    "Summer",
+                    "Witch's Swamp"
+                  ]
                 },
                 {
                   "name": "Shad",
-                  "origin": "Found in Rivers, 9am – 2am, Spring, Summer, and Fall. Only when raining"
+                  "tags": ["Rivers", "9am – 2am", "Spring", "Summer", "Fall", "Raining"]
                 },
                 {
                   "name": "Tiger Trout",
-                  "origin": "Found in Rivers, 6am – 7pm, Fall and Winter. Can be found in any weather"
+                  "tags": ["Rivers", "6am – 7pm", "Fall", "Winter"]
                 }
               ]
             },
@@ -401,19 +426,19 @@
               "items": [
                 {
                   "name": "Largemouth Bass",
-                  "origin": "Found in the Mountain Lake, 6am – 7pm, All Seasons"
+                  "tags": ["Mountain Lake", "6am – 7pm"]
                 },
                 {
                   "name": "Carp",
-                  "origin": "Found in the Mountain Lake, Anytime, during Spring, Summer, or Fall. Found in Secret Woods or Sewer, Anytime, All Seasons"
+                  "tags": ["Mountain Lake", "Spring", "Summer", "Fall", "Sewer", "Secret Woods"]
                 },
                 {
                   "name": "Bullhead",
-                  "origin": "Found in the Mountain Lake, Anytime, All Seasons"
+                  "tags": ["Mountain Lake"]
                 },
                 {
                   "name": "Sturgeon",
-                  "origin": "Found in the Mountain Lake, 6am – 7pm, Summer and Winter"
+                  "tags": ["Mountain Lake", "6am – 7pm", "Summer", "Winter"]
                 }
               ]
             },
@@ -421,23 +446,23 @@
               "name": "Ocean Fish Bundle",
               "icon": "Bundle_Blue",
               "amount": 4,
-              "reward": "oceanFishBundle.reward.title",
+              "reward": "Beach Warp Totem&&5",
               "items": [
                 {
                   "name": "Sardine",
-                  "origin": "Found in the Ocean, 6am – 7pm, Spring, Fall, and Winter"
+                  "tags": ["Ocean", "6am – 7pm", "Spring", "Fall", "Winter"]
                 },
                 {
                   "name": "Tuna",
-                  "origin": "Found in the Ocean, 6am – 7pm, Summer and Winter"
+                  "tags": ["Ocean", "6am – 7pm", "Summer", "Winter"]
                 },
                 {
                   "name": "Red Snapper",
-                  "origin": "Found in the Ocean, 6am – 7pm, Summer and Fall. Only when raining"
+                  "tags": ["Ocean", "6am – 7pm", "Summer", "Fall", "Raining"]
                 },
                 {
                   "name": "Tilapia",
-                  "origin": "Found in the Ocean, 6am – 2pm, Summer and Fall"
+                  "tags": ["Ocean", "6am – 2pm", "Summer", "Fall"]
                 }
               ]
             },
@@ -449,15 +474,22 @@
               "items": [
                 {
                   "name": "Walleye",
-                  "origin": "Found in Rivers, the Mountain Lake, and Cindersap Forest Pond, 12pm – 2am, Fall (Winter with Rain Totem.) Only when raining"
+                  "tags": [
+                    "Rivers",
+                    "Mountain Lake",
+                    "Cindersap Forest",
+                    "12pm – 2am",
+                    "Fall",
+                    "Raining"
+                  ]
                 },
                 {
                   "name": "Bream",
-                  "origin": "Found in Rivers, 6pm – 2am, All Seasons"
+                  "tags": ["Rivers", "6pm – 2am"]
                 },
                 {
                   "name": "Eel",
-                  "origin": "Found in the Ocean, 4pm – 2am, Spring or Fall. Only when raining"
+                  "tags": ["Ocean", "4pm – 2am", "Spring", "Fall", "Raining"]
                 }
               ]
             },
@@ -465,47 +497,47 @@
               "name": "Crab Pot Bundle",
               "icon": "Bundle_Purple",
               "amount": 5,
-              "reward": "crabPotBundle.reward.title",
+              "reward": "Crab Pot&&3",
               "items": [
                 {
                   "name": "Lobster",
-                  "origin": "Caught in Crab Pots (ocean)"
+                  "tags": ["Crab Pots", "Ocean"]
                 },
                 {
                   "name": "Crayfish",
-                  "origin": "Caught in Crab Pots (freshwater)"
+                  "tags": ["Crab Pots", "Freshwater"]
                 },
                 {
                   "name": "Crab",
-                  "origin": "Caught in Crab Pots (ocean), drops from Rock Crabs or Lava Crabs in The Mines"
+                  "tags": ["Crab Pots", "Ocean", "Drops Rock Crabs", "Lava Crabs Mines"]
                 },
                 {
                   "name": "Cockle",
-                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                  "tags": ["Crab Pots", "Ocean", "Beach", "Foraging"]
                 },
                 {
                   "name": "Mussel",
-                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                  "tags": ["Crab Pots", "Ocean", "Beach", "Foraging"]
                 },
                 {
                   "name": "Shrimp",
-                  "origin": "Caught in Crab Pots (ocean)"
+                  "tags": ["Crab Pots", "Ocean"]
                 },
                 {
                   "name": "Snail",
-                  "origin": "Caught in Crab Pots (freshwater)"
+                  "tags": ["Crab Pots", "Freshwater"]
                 },
                 {
                   "name": "Periwinkle",
-                  "origin": "Caught in Crab Pots (freshwater)"
+                  "tags": ["Crab Pots", "Freshwater"]
                 },
                 {
                   "name": "Oyster",
-                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                  "tags": ["Crab Pots", "Ocean", "Beach", "Foraging"]
                 },
                 {
                   "name": "Clam",
-                  "origin": "Caught in Crab Pots (ocean), Beach Foraging"
+                  "tags": ["Crab Pots", "Ocean", "Beach", "Foraging"]
                 }
               ]
             },
@@ -513,23 +545,23 @@
               "name": "Specialty Fish Bundle",
               "icon": "Bundle_Red",
               "amount": 4,
-              "reward": "specialtyFishBundle.reward.title",
+              "reward": "Dish O' The Sea&&5",
               "items": [
                 {
                   "name": "Pufferfish",
-                  "origin": "Found in the Ocean, 12pm – 4pm, Summer during sunny weather"
+                  "tags": ["Ocean", "12pm – 4pm", "Summer"]
                 },
                 {
                   "name": "Ghostfish",
-                  "origin": "Found in ponds in The Mines floors 20 and 60, Anytime, All Seasons. May also be dropped by Ghosts"
+                  "tags": ["20 & 60 Mines"]
                 },
                 {
                   "name": "Sandfish",
-                  "origin": "Found in the pond in The Desert, 6am – 8pm, All Seasons"
+                  "tags": ["Pond Desert", "6am – 8pm"]
                 },
                 {
                   "name": "Woodskip",
-                  "origin": "Found in the Secret Woods and the Forest Farm, Anytime, All Seasons"
+                  "tags": ["Secret Woods", "Forest Farm"]
                 }
               ]
             }
@@ -539,7 +571,7 @@
           "name": "Boiler_Room",
           "description": "The Boiler Room appears after completing two bundles. Completing all Boiler Room bundles repairs the Minecarts, allowing the player to fast travel between distant locations. The Locations are Bus Stop, Mines, Quarry and Town.",
           "amount": 3,
-          "reward": "(Minecarts Repaired)[Minecarts]",
+          "reward": "Minecarts Repaired&Minecart",
           "bundles": [
             {
               "name": "Blacksmith's Bundle",
@@ -549,15 +581,15 @@
               "items": [
                 {
                   "name": "Copper_Bar",
-                  "origin": "Smelting Copper Ore in the Furnacer"
+                  "tags": ["Furnace"]
                 },
                 {
                   "name": "Iron_Bar",
-                  "origin": "Smelting Iron Ore in the Furnace, Crafting the 'Transmute (Fe)' recipe"
+                  "tags": ["Furnace", "Transmute recipe"]
                 },
                 {
                   "name": "Gold_Bar",
-                  "origin": "Smelting Gold Ore in the Furnace, Crafting the 'Transmute (Au)' recipe"
+                  "tags": ["Furnace", "Transmute recipe"]
                 }
               ]
             },
@@ -569,19 +601,32 @@
               "items": [
                 {
                   "name": "Quartz",
-                  "origin": "Foraging on all floors of The Mines"
+                  "tags": ["Mines"]
                 },
                 {
                   "name": "Earth_Crystal",
-                  "origin": "Foraging on floors 1-39 of The Mines, Geodes, Omni Geodes, drop from Duggies in the Mines (floors 6-29)"
+                  "tags": [
+                    "Foraging",
+                    "1-39 Mines",
+                    "Geodes",
+                    "Omni Geodes",
+                    "Duggies",
+                    "6-29 Mines"
+                  ]
                 },
                 {
                   "name": "Frozen_Tear",
-                  "origin": "Foraging on floors 41-79 of The Mines, Frozen Geodes, Omni Geodes, drop from Dust Sprites in the Mines (floors 41-79)"
+                  "tags": [
+                    "Foraging",
+                    "41-79 Mines",
+                    "Frozen Geodes",
+                    "Omni Geodes",
+                    "Dust Sprites"
+                  ]
                 },
                 {
                   "name": "Fire_Quartz",
-                  "origin": "Foraging on floors 81-119 of The Mines, Magma Geodes, Omni Geodes"
+                  "tags": ["Foraging", "81-119 Mines", "Magma Geodes", "Omni Geodes"]
                 }
               ]
             },
@@ -593,19 +638,33 @@
               "items": [
                 {
                   "name": "Slime",
-                  "origin": "Dropped by Slimes"
+                  "tags": ["Slimes"]
                 },
                 {
                   "name": "Bat_Wing",
-                  "origin": "Dropped by Bats in The Mines or the Skull Cavern"
+                  "tags": ["Bats", "Skull Cavern"]
                 },
                 {
                   "name": "Solar_Essence",
-                  "origin": "Dropped by Ghosts, Squid Kids, or Metal Heads in The Mines, dropped by Mummies or Iridium Bats in the Skull Cavern; produced by Sunfish in Fish Ponds; buy from Krobus"
+                  "tags": [
+                    "Ghosts",
+                    "Squid Kids",
+                    "Metal Heads Mines",
+                    "Mummies",
+                    "Iridium Bats Skull Cavern",
+                    "Krobus"
+                  ]
                 },
                 {
                   "name": "Void_Essence",
-                  "origin": "Dropped by Shadow Brutes or Shadow Shamans in The Mines or Serpents in the Skull Cavern; produced by Void Salmon in Fish Ponds; buy from Krobus"
+                  "tags": [
+                    "Shadow Brutes",
+                    "Shadow Shamans",
+                    "Mines",
+                    "Serpents",
+                    "Skull Cavern",
+                    "Krobus"
+                  ]
                 }
               ]
             }
@@ -624,28 +683,35 @@
               "reward": "Pink_Cake",
               "items": [
                 {
-                  "name": "Maple_Syrup",
-                  "origin": "Tapped Maple Tree"
+                  "name": "Maple Syrup",
+                  "tags": ["Maple Tree"]
                 },
                 {
                   "name": "Fiddlehead_Fern",
-                  "origin": "Summer Foraging in the Secret Woods, Foraging on Prehistoric Floors at the Skull Cavern, Cutting down Green Rain Trees"
+                  "tags": [
+                    "Summer",
+                    "Foraging",
+                    "Secret Woods",
+                    "Prehistoric Floors",
+                    "Skull Cavern",
+                    "Down Green Rain Trees"
+                  ]
                 },
                 {
                   "name": "Truffle",
-                  "origin": "Pigs"
+                  "tags": ["Pigs"]
                 },
                 {
                   "name": "Poppy",
-                  "origin": "Summer Crops"
+                  "tags": ["Summer Crops"]
                 },
                 {
                   "name": "Maki_Roll",
-                  "origin": "Cooking (recipe sources: The Queen of Sauce, The Saloon)"
+                  "tags": ["Cooking"]
                 },
                 {
                   "name": "Fried_Egg",
-                  "origin": "Cooking"
+                  "tags": ["Cooking"]
                 }
               ]
             },
@@ -656,28 +722,37 @@
               "reward": "Seed_Maker",
               "items": [
                 {
-                  "name": "Red_Mushroom",
-                  "origin": "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree, Forest Farm Map in Fall"
+                  "name": "Red Mushroom",
+                  "tags": [
+                    "Foraging",
+                    "Mines",
+                    "Summer",
+                    "Fall",
+                    "Secret Woods",
+                    "Farm Cave",
+                    "Mushroom Tree",
+                    "Forest Farm"
+                  ]
                 },
                 {
                   "name": "Sea_Urchin",
-                  "origin": "Beach Foraging, after using 300 wood to fix the bridge to the right side of The Beach or any side of the beach during crab mating season; foraging in the Beach Farm"
+                  "tags": ["Beach", "Foraging", "Beach Farm"]
                 },
                 {
                   "name": "Sunflower",
-                  "origin": "Summer / Fall Crops"
+                  "tags": ["Summer Crops", "Fall Crops"]
                 },
                 {
                   "name": "Duck_Feather",
-                  "origin": "Ducks"
+                  "tags": ["Ducks"]
                 },
                 {
                   "name": "Aquamarine",
-                  "origin": "Aquamarine Nodes, boxes in The Mines, Fishing Treasure Chests"
+                  "tags": ["Aquamarine Nodes", "Boxes", "Fishing Treasure Chests"]
                 },
                 {
                   "name": "Red_Cabbage",
-                  "origin": "Summer Crops (Red Cabbage Seeds are available at Pierre's General Store in year 2+, at the Traveling Cart, or dropped by Serpents, Mummies, and Purple Slimes)"
+                  "tags": ["Summer Crops", "Traveling Cart", "Serpents", "Mummies", "Purple Slimes"]
                 }
               ]
             },
@@ -688,20 +763,20 @@
               "reward": "Recycling_Machine",
               "items": [
                 {
-                  "name": "Purple_Mushroom",
-                  "origin": "The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall"
+                  "name": "Purple Mushroom",
+                  "tags": ["Foraging", "Mines", "Farm Cave", "Forest Farm"]
                 },
                 {
                   "name": "Nautilus_Shell",
-                  "origin": "Winter Beach Foraging, Beach Farm Map Foraging during any season, Random gift from Demetrius"
+                  "tags": ["Winter", "Beach", "Foraging", "Beach Farm"]
                 },
                 {
                   "name": "Chub",
-                  "origin": "Can be found in the mountain lake and river during all seasons, any time"
+                  "tags": ["Mountain Lake", "Rivers"]
                 },
                 {
                   "name": "Frozen_Geode",
-                  "origin": "The Mines floors 41-79"
+                  "tags": ["41-79 Mines"]
                 }
               ]
             },
@@ -713,15 +788,15 @@
               "items": [
                 {
                   "name": "Wheat",
-                  "origin": "Summer / Fall Crops"
+                  "tags": ["Summer Crops", "Fall Crops"]
                 },
                 {
                   "name": "Hay",
-                  "origin": "Purchase at Marnie's Ranch or Desert Trader, or harvest from Grass or Wheat"
+                  "tags": ["Marnie's Ranch", "Desert Trader", "Grass", "Wheat Harvesting"]
                 },
                 {
-                  "name": "Apple_repeated",
-                  "origin": "Apple Trees during Fall, The Farm Cave (fruit bat option)"
+                  "name": "Apple&&&3",
+                  "tags": ["Apple Trees", "Fall", "Farm Cave"]
                 }
               ]
             },
@@ -732,20 +807,20 @@
               "reward": "Gold_Bar_repeated",
               "items": [
                 {
-                  "name": "Oak_Resin",
-                  "origin": "Tapped Oak Tree"
+                  "name": "Oak Resin",
+                  "tags": ["Oak Tree"]
                 },
                 {
                   "name": "Wine",
-                  "origin": "Keg"
+                  "tags": ["Keg"]
                 },
                 {
                   "name": "Rabbit's_Foot",
-                  "origin": "Rabbits, Serpent drop in Skull Cavern (0.8%)"
+                  "tags": ["Rabbits", "Serpents", "Skull Cavern"]
                 },
                 {
                   "name": "Pomegranate",
-                  "origin": "Pomegranate Trees during Fall, The Farm Cave (fruit bat option)"
+                  "tags": ["Pomegranate Trees", "Fall", "Farm Cave"]
                 }
               ]
             }
@@ -761,10 +836,10 @@
               "name": "2,500 Bundle",
               "icon": "Bundle_Red",
               "amount": 1,
-              "reward": "Chocolate_Cake",
+              "reward": "Chocolate Cake",
               "items": [
                 {
-                  "name": "Money_2,500g"
+                  "name": "Money&&2,500"
                 }
               ]
             },
@@ -775,7 +850,7 @@
               "reward": "Quality_Fertilizer",
               "items": [
                 {
-                  "name": "Money_5,000g"
+                  "name": "Money&&5,000"
                 }
               ]
             },
@@ -786,7 +861,7 @@
               "reward": "Lightning_Rod",
               "items": [
                 {
-                  "name": "Money_10,000g"
+                  "name": "Money&&10,000"
                 }
               ]
             },
@@ -797,7 +872,7 @@
               "reward": "Crystalarium",
               "items": [
                 {
-                  "name": "Money_25,000g"
+                  "name": "Money&&25,000"
                 }
               ]
             }
@@ -821,27 +896,27 @@
               "items": [
                 {
                   "name": "Silver_Wine",
-                  "origin": "Cask"
+                  "tags": ["Cask"]
                 },
                 {
                   "name": "Dinosaur_Mayonnaise",
-                  "origin": "Mayonnaise Machine"
+                  "tags": ["Mayonnaise Machine"]
                 },
                 {
                   "name": "Prismatic_Shard",
-                  "origin": "Mining"
+                  "tags": ["Mining"]
                 },
                 {
                   "name": "Gold_Ancient_Fruit",
-                  "origin": "Crops"
+                  "tags": ["Crops"]
                 },
                 {
                   "name": "Gold_Void_Salmon",
-                  "origin": "Fishing in the Witch's Swamp"
+                  "tags": ["Witch's Swamp"]
                 },
                 {
                   "name": "Caviar",
-                  "origin": "Preserves Jar product from Sturgeon roe"
+                  "tags": ["Sturgeon", "Preserves Jar"]
                 }
               ]
             }

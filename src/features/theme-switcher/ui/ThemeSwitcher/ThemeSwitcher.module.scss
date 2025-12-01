@@ -1,0 +1,45 @@
+@use '@app/styles/variables' as *;
+
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: $gap-small $gap-medium;
+  border: none;
+  background: $color-gray-icon-bg;
+  border-radius: $border-radius;
+  cursor: pointer;
+  color: $color-black-coal;
+  transition:
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  svg {
+    flex-shrink: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover {
+    background: $color-gray-border;
+    transform: scale(1.05);
+
+    svg {
+      transform: rotate(15deg);
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  [data-theme='dark'] & {
+    background: $color-dark-icon-bg;
+    color: $color-dark-text;
+
+    &:hover {
+      background: $color-dark-surface-elevated;
+    }
+  }
+}

@@ -1,71 +1,19 @@
 {
-  "springForagingBundle.reward.title": "(Spring Seeds [30])[Spring Seeds]",
-  "summerForagingBundle.reward.title": "(Summer Seeds [30])[Summer Seeds]",
-  "fallForagingBundle.reward.title": "(Fall Seeds [30])[Fall Seeds]",
-  "winterForagingBundle.reward.title": "(Winter Seeds [30])[Winter Seed]",
-
-  "Wood": "(Wood [99])[Wood]",
-  "Stone": "(Stone [99])[Stone]",
-  "Hardwood": "(Hardwood [99])[Hardwood]",
-
-  "Parsnip_gold": "(Parsnip [5])[Parsnip]",
-  "Melon_gold": "(Melon [5])[Melon]",
-  "Pumpkin_gold": "(Pumpkin [5])[Pumpkin]",
-  "Corn_gold": "(Corn [5])[Corn]",
-
-  "Speed-Gro": "(Speed-Gro [20])[Speed-Gro]",
-
-  "Large_Egg_brown": "Large Egg (Brown)",
-
-  "riverFishBundle.reward.title": "(Deluxe Bait [30])[Deluxe Bait]",
-
-  "crabPotBundle.reward.title": "(Crab Pot [3])[Crab Pot]",
-  "oceanFishBundle.reward.title": "(Warp Totem: Beach [5])[Warp Totem: Beach]",
-
-  "specialtyFishBundle.reward.title": "(Dish O' The Sea [5])[Dish O' The Sea])",
-
-  "Omni_Geode": "(Omni Geode [5])[Omni Geode]",
-
-  "Slime": "(Slime [99])[Slime]",
-  "Bat_Wing": "(Bat Wing [10])[Bat Wing])",
-  "Pink_Cake": "(Pink Cake [3])[Pink Cake]",
-
-  "Wheat": "(Wheat [10])[Wheat]",
-  "Hay": "(Hay [10])[Hay]",
-  "Apple_repeated": "(Apple [3])[Apple]",
-
-  "Gold_Bar_repeated": "(Gold Bar [5])[Gold Bar]",
-
-  "Bus_Repair": "(Bus Repair)[Bus Stop]",
-  "Chocolate_Cake": "(Chocolate Cake [3])[Chocolate Cake])",
-  "Quality_Fertilizer": "(Quality Fertilizer [30])[Quality Fertilizer]",
-
-  "Money_2,500g": "(2,500g)[Gold]",
-  "Money_5,000g": "(5,000g)[Gold]",
-  "Money_10,000g": "(10,000g)[Gold]",
-  "Money_25,000g": "(25,000g)[Gold]",
-
-  "House_Upgrade_1": "(House Upgrade 1)[Farmhouse]",
-  "House_Upgrade_2": "(House Upgrade 2)[Farmhouse]",
-  "House_Upgrade_3": "(House Upgrade 3)[Farmhouse]",
-  "Big_Barn": "(Big Barn)[Barn]",
-  "Deluxe_Barn": "(Deluxe Barn)[Barn]",
-  "Big_Coop": "(Big Coop)[Coop]",
-  "Deluxe_Coop": "(Deluxe Coop)[Coop]",
-  "Big_Shed": "(Big Shed)[Shed]",
-  "Fish_Pond": "(Fish Pond)[Fish_Pond]",
-  "Slime_Hutch": "(Slime Hutch)[Slime_Hutch]",
-  "Shipping_Bin": "(Shipping Bin)[Shipping]",
-
-  "Silver_Wine": "Wine",
-  "Gold_Ancient_Fruit": "(Ancient Fruit [5])[Ancient_Fruit]",
-  "Gold_Void_Salmon": "Void Salmon",
-
-  "HomePage.title": "Track your progress in the Stardew Valley Community Center! 🌱✨",
-  "HomePage.description": "This handy checklist will help you simplify resource collection and bundle completion in the Community Center. Check off completed tasks, see which items you still need to gather, and move one step closer to restoring Stardew Valley!",
-  "HomePage.li0": "All rooms and bundles in one place",
-  "HomePage.li1": "Mark collected items",
-  "HomePage.li2": "Automatic tracking of remaining tasks",
-  "HomePage.li3": "The perfect tool for 100% completion",
-  "HomePage.footer": "Start tracking and gather all the loose ends right now! ✅"
+  "HomePage.cta": "Start tracking and gather all the bundles right now! ✅",
+  "HomePage.description": "The Stardew Valley Community Center contains many bundles that need to be collected to restore the building. Our application helps you track progress for each bundle, see which items are already collected, and how many remain until completion. All data is saved locally in your browser, so you can continue tracking at any time.",
+  "HomePage.feature1.description": "All 6 Community Center rooms and all bundles are available in convenient navigation. Quick access to any room and progress viewing.",
+  "HomePage.feature1.title": "Everything in one place",
+  "HomePage.feature2.description": "Mark collected items with one click. Progress is saved automatically and synchronized between sessions.",
+  "HomePage.feature2.title": "Simple tracking",
+  "HomePage.feature3.description": "Progress rings show how many items are already collected. Badges with the number of remaining tasks help you quickly understand what else is needed.",
+  "HomePage.feature3.title": "Visual progress",
+  "HomePage.feature4.description": "Each item has colored tags indicating the source of acquisition. Easy to understand where to look for needed items.",
+  "HomePage.feature4.title": "Smart tags",
+  "HomePage.feature5.description": "Links to Stardew Valley wiki for each item and reward. All necessary information at hand.",
+  "HomePage.feature5.title": "Detailed information",
+  "HomePage.feature6.description": "Support for light and dark themes with automatic detection of system settings. Comfortable work at any time of day.",
+  "HomePage.feature6.title": "Dark theme",
+  "HomePage.featuresTitle": "Why it's convenient",
+  "HomePage.subtitle": "A convenient tool for tracking all bundles and achieving 100% completion",
+  "HomePage.title": "Track your progress in the Stardew Valley Community Center! 🌱✨"
 }

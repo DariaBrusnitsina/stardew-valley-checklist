@@ -1,5 +1,5 @@
-@import './reset';
-@import '@app/styles/variables';
+@use './reset';
+@use '@app/styles/variables' as *;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,6 +12,16 @@
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media only screen and (width <= 700px) {
+    font-size: 14px;
+  }
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  color: $color-dark-text;
+  background: $color-dark-bg;
 }
 
 #app {

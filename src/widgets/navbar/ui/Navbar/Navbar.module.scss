@@ -1,0 +1,49 @@
+@use '@app/styles/variables' as *;
+
+.navbar {
+  z-index: 400;
+  height: $action-bar-height;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $gap-large;
+  background-color: $color-white;
+  border-bottom: $border-width-small solid $color-gray-dark;
+  transition:
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  [data-theme='dark'] & {
+    background-color: $color-dark-surface;
+    border-bottom-color: $color-dark-border;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  button {
+    border: 0;
+    padding: $gap-tiny;
+    height: $img-size;
+    width: $img-size;
+    opacity: 0.7;
+    background: transparent url('/stardew-valley-checklist/icons/menu.svg') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media only screen and (width <= 700px) {
+      height: 36px;
+      width: 36px;
+      padding: 6px;
+    }
+
+    [data-theme='dark'] & {
+      opacity: 0.9;
+      filter: invert(1);
+    }
+  }
+}

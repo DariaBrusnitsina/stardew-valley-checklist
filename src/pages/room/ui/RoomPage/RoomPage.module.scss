@@ -1,0 +1,243 @@
+@use '@app/styles/variables' as *;
+
+.header {
+  margin-bottom: $gap-large;
+}
+
+.rewardSection {
+  margin-bottom: $gap-medium;
+}
+
+.rewardContainer {
+  display: flex;
+  align-items: center;
+  gap: $gap-medium;
+  padding: $gap-medium $gap-large;
+  background: linear-gradient(135deg, rgba(255, 200, 80, 0.15) 0%, rgba(255, 170, 80, 0.15) 100%);
+  border-radius: $border-radius;
+  border: 2px solid rgba(255, 200, 80, 0.3);
+  box-shadow: 0 2px 8px rgba(255, 200, 80, 0.1);
+  transition:
+    background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(255, 200, 80, 0.2) 0%, rgba(255, 170, 80, 0.2) 100%);
+    border-color: rgba(255, 200, 80, 0.4);
+    box-shadow: 0 4px 12px rgba(255, 200, 80, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+.rewardIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+  animation: rewardPulse 2s ease-in-out infinite;
+
+  @media only screen and (width <= 700px) {
+    font-size: 28px;
+  }
+}
+
+@keyframes rewardPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.rewardContent {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-tiny;
+  flex: 1;
+}
+
+.rewardLabel {
+  font-size: $small-font-size;
+  color: $color-gray-text-light;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media only screen and (width <= 700px) {
+    font-size: 12px;
+  }
+
+  [data-theme='dark'] & {
+    color: $color-dark-text-light;
+  }
+}
+
+.rewardLink {
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-blue-link;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media only screen and (width <= 700px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: $color-blue;
+    transform: translateX(2px);
+  }
+}
+
+.rewardHint {
+  display: flex;
+  align-items: center;
+  gap: $gap-tiny;
+  padding: $gap-small $gap-medium;
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, rgba(57, 112, 215, 0.1) 100%);
+  border-radius: $border-radius;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  margin-top: $gap-small;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.hintIcon {
+  font-size: 18px;
+
+  @media only screen and (width <= 700px) {
+    font-size: 16px;
+  }
+}
+
+.hintText {
+  font-size: $small-font-size;
+  color: $color-black-coal;
+  font-weight: 500;
+
+  @media only screen and (width <= 700px) {
+    font-size: 12px;
+  }
+}
+
+.descriptionSection {
+  margin-top: $gap-medium;
+  padding: $gap-large;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: flex-start;
+  gap: $gap-medium;
+  transition:
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.descriptionLocked {
+    background: $color-gray-icon-bg;
+    border: 1px dashed $color-gray-border;
+    opacity: 0.7;
+
+    [data-theme='dark'] & {
+      background: $color-dark-icon-bg;
+      border-color: $color-dark-border;
+    }
+  }
+
+  &.descriptionUnlocked {
+    background: linear-gradient(135deg, rgba(126, 196, 136, 0.1) 0%, rgba(100, 195, 140, 0.1) 100%);
+    border: 2px solid rgba(126, 196, 136, 0.3);
+    opacity: 1;
+    animation: unlockAnimation 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    [data-theme='dark'] & {
+      background: linear-gradient(
+        135deg,
+        rgba(126, 196, 136, 0.15) 0%,
+        rgba(100, 195, 140, 0.15) 100%
+      );
+      border-color: rgba(126, 196, 136, 0.4);
+    }
+  }
+}
+
+@keyframes unlockAnimation {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.descriptionIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media only screen and (width <= 700px) {
+    font-size: 28px;
+  }
+
+  .descriptionUnlocked & {
+    animation: bounce 1s ease-in-out;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.description {
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media only screen and (width <= 700px) {
+    font-size: 14px;
+  }
+
+  .descriptionLocked & {
+    color: $color-gray-text-light;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text-light;
+    }
+  }
+
+  .descriptionUnlocked & {
+    color: $color-black-coal;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+  }
+}

@@ -1,0 +1,252 @@
+@use '@app/styles/variables' as *;
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: $gap-medium;
+  padding: $gap-medium;
+  margin-bottom: $gap-small;
+  background: $color-gray-icon-bg;
+  border-radius: $border-radius;
+  transition:
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  [data-theme='dark'] & {
+    background: $color-dark-surface;
+  }
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: $color-gray-border;
+    border: 1px solid $color-gray-border;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition:
+      border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media only screen and (width <= 700px) {
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+    }
+  }
+
+  .icon {
+    width: $img-size;
+    height: $img-size;
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-tiny;
+    min-width: 0;
+  }
+
+  .itemName {
+    color: $color-black-coal;
+    font-size: $global-font-size;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media only screen and (width <= 700px) {
+      font-size: 14px;
+    }
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+
+    a {
+      color: $color-blue-link;
+      text-decoration: none;
+      cursor: pointer;
+      transition:
+        color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        text-decoration 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        text-decoration: underline;
+        color: $color-blue;
+      }
+    }
+
+    .origin {
+      color: $color-gray-text-light;
+      font-size: $small-font-size;
+
+      @media only screen and (width <= 700px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: $gap-tiny;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: $small-font-size;
+    font-weight: 600;
+    color: $color-white;
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition:
+      background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+
+    @media only screen and (width <= 700px) {
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+  }
+
+  .tagBlue {
+    background: $color-tag-blue;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-blue;
+    }
+  }
+
+  .tagPurple {
+    background: $color-tag-purple;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-purple;
+    }
+  }
+
+  .tagPink {
+    background: $color-tag-pink;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-pink;
+    }
+  }
+
+  .tagGreen {
+    background: $color-tag-green;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-green;
+    }
+  }
+
+  .tagOrange {
+    background: $color-tag-orange;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-orange;
+    }
+  }
+
+  .tagRed {
+    background: $color-tag-red;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-red;
+    }
+  }
+
+  .tagYellow {
+    background: $color-tag-yellow;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-yellow;
+    }
+  }
+
+  .tagTeal {
+    background: $color-tag-teal;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-teal;
+    }
+  }
+
+  .tagBrown {
+    background: $color-tag-brown;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-brown;
+    }
+  }
+
+  .tagIndigo {
+    background: $color-tag-indigo;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-indigo;
+    }
+  }
+
+  .tagGray {
+    background: $color-tag-gray;
+
+    [data-theme='dark'] & {
+      background: $color-dark-tag-gray;
+    }
+  }
+}
+
+.done {
+  opacity: 0.6;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .icon {
+    opacity: 0.3;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .itemName {
+    color: $color-gray-text-light;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    [data-theme='dark'] & {
+      color: $color-dark-text-light;
+    }
+
+    a {
+      color: $color-gray-text-light;
+      transition:
+        color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        text-decoration 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      [data-theme='dark'] & {
+        color: $color-dark-text-light;
+      }
+
+      &:hover {
+        color: $color-gray-text-light;
+
+        [data-theme='dark'] & {
+          color: $color-dark-text-light;
+        }
+      }
+    }
+  }
+
+  .tag {
+    opacity: 0.7;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

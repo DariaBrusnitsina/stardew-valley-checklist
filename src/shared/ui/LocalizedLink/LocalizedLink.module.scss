@@ -1,0 +1,82 @@
+@use '@app/styles/variables' as *;
+
+.link {
+  font-weight: bold;
+  color: $color-blue-link;
+  font-size: $global-font-size;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: $gap-tiny;
+  transition:
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media only screen and (width <= 700px) {
+    font-size: 14px;
+  }
+
+  [data-theme='dark'] & {
+    color: $color-blue-link;
+  }
+
+  &:hover {
+    color: $color-black-coal;
+    border-color: $color-black-coal;
+    text-decoration: none;
+
+    [data-theme='dark'] & {
+      color: $color-dark-text;
+    }
+  }
+
+  &.underline {
+    font-weight: bold;
+    border-bottom: $border-width-medium solid $color-green;
+  }
+
+  .linkText {
+    flex: 0 1 auto;
+  }
+
+  .counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 6px;
+    background: $color-gray-icon-bg;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 600;
+    color: $color-gray-text-light;
+    line-height: 1;
+    transition:
+      background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media only screen and (width <= 700px) {
+      font-size: 10px;
+      min-width: 16px;
+      height: 16px;
+    }
+
+    [data-theme='dark'] & {
+      background: $color-dark-icon-bg;
+      color: $color-dark-text-light;
+    }
+
+    .link:hover & {
+      background: $color-gray-border;
+      color: $color-black-coal;
+      transform: scale(1.05);
+
+      [data-theme='dark'] & {
+        background: $color-dark-surface-elevated;
+        color: $color-dark-text;
+      }
+    }
+  }
+}
